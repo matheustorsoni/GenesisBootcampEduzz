@@ -57,9 +57,8 @@ createColorElement(color).classList.add('selected');
 
 setTimeout(() => {
     createColorElement(color).classList.remove('selected');
-
-})
-checkOrder();
+    checkOrder();
+},300);
 }
 
 //funçao que retorna a cor
@@ -89,3 +88,19 @@ let lose = () => {
 
     playGame();
 }
+
+//funçao para começar o jogo
+
+let playGame = () => {
+    alert('Bem vindo ao Jogo Gênesis! Feito Por Matheus Torsoni de Campos')
+    score = 0;
+    
+    nextLevel();
+}
+
+red.addEventListenner('click', click(0));
+green.addEventListenner('click', click(1));
+blue.addEventListenner('click', click(2));
+yellow.addEventListenner('click', click(3));
+
+playGame();
