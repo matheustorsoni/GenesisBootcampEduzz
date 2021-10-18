@@ -2,10 +2,10 @@ let order = [];
 let clickedOrder = [];
 let score = 0;
 
-// 0 = verde
-// 1 = vermelho
-// 2 = amarelo
-// 3 = azul
+// 0 = vermelho
+// 1 = verde
+// 2 = azul
+// 3 = amarelo
 
 const blue = document.querySelector ('.yellow');
 const blue = document.querySelector ('.green');
@@ -60,4 +60,17 @@ setTimeout(() => {
 
 })
 checkOrder();
+}
+
+//funçao que retorna a cor
+let createColorElement = (color) => {
+    if(color == 0){
+        return red;
+    } else if(color == 1){
+        return green;
+    } else if(color == 2){
+        return blue;
+    } else if(color == 3){
+        return yellow;
+    }
 }
