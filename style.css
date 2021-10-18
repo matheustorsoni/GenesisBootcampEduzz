@@ -47,3 +47,7 @@ body {
     grid-area: green;
     border-top-left-radius: 100%;
 }
+
+.selected {
+    opacity: 1.0;
+}
