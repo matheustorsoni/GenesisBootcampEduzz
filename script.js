@@ -7,8 +7,17 @@ let score = 0;
 // 2 = amarelo
 // 3 = azul
 
-const blue = document.querySelector ('.blue');
-const blue = document.querySelector ('.red');
-const blue = document.querySelector ('.green');
 const blue = document.querySelector ('.yellow');
+const blue = document.querySelector ('.green');
+const blue = document.querySelector ('.red');
+const blue = document.querySelector ('.blue');
 
+let shuffleOrder = () => {
+    let colorOrder = Math.floor(Math.random() * 4);
+    order[order.lenght] = colorOrder;
+    clickedOrder = [];
+    
+    for(let i in order) {
+        let elementColor =
+    }
+}
