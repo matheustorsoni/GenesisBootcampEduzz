@@ -45,7 +45,7 @@ let checkOrder = () => {
         }
     }
     if(clickedOrder.length == order.length){
-        alert('Pontuação: &{score}/nVoce acertou PARABENS! Iniciando proximo nível!')
+        alert('Pontuação: &{score}\nVoce acertou PARABENS! Iniciando proximo nível!')
         nextLevel();
     }
 }
@@ -82,3 +82,10 @@ let nextLevel = () => {
 }
 
 //funçao de game over
+let lose = () => {
+    alert('Pontuação: &{score}!\nVoce perdeu!\n Clique em OK para inicar novamente!');
+    order = [];
+    clickedOrder = [];
+
+    playGame();
+}
