@@ -45,7 +45,7 @@ let checkOrder = () => {
         }
     }
     if(clickedOrder.length == order.length){
-        alert('Pontuação: &{score}\nVoce acertou PARABENS! Iniciando proximo nível!')
+        alert('Pontuação: &{score}\nVoce acertou PARABENS!\nIniciando proximo nível!')
         nextLevel();
     }
 }
@@ -92,15 +92,18 @@ let lose = () => {
 //funçao para começar o jogo
 
 let playGame = () => {
-    alert('Bem vindo ao Jogo Gênesis! Feito Por Matheus Torsoni de Campos')
+    alert('Bem vindo ao Jogo Gênesis! Feito Por Matheus Torsoni de Campos');
     score = 0;
     
     nextLevel();
 }
 
-red.addEventListenner('click', click(0));
-green.addEventListenner('click', click(1));
-blue.addEventListenner('click', click(2));
-yellow.addEventListenner('click', click(3));
+//eventos de click das cores
+red.onclick = () => click(0)
+green.onclick = () => click(1)
+blue.onclick = () => click(2)
+yellow.onclick = () => click(3)
 
+
+//inicio do jogo
 playGame();
