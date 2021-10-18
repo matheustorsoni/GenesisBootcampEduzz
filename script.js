@@ -49,3 +49,15 @@ let checkOrder = () => {
         nextLevel();
     }
 }
+
+//funçao para clicar nas cores
+let click = (color) => {
+clickedOrder[clickedOrder.length] = color;
+createColorElement(color).classList.add('selected');
+
+setTimeout(() => {
+    createColorElement(color).classList.remove('selected');
+
+})
+checkOrder();
+}
