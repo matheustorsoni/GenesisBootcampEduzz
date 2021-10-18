@@ -74,3 +74,11 @@ let createColorElement = (color) => {
         return yellow;
     }
 }
+
+//funçao para proximo nivel do jogo
+let nextLevel = () => {
+    score++;
+    shuffleOrder();
+}
+
+//funçao de game over
